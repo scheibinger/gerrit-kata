@@ -6,6 +6,9 @@ Workshop about gerrit
 ## Introduction
 http://gerrit-documentation.googlecode.com/svn/Documentation/2.3/intro-quick.html
 
+## Workflow
+http://source.android.com/source/life-of-a-patch.html
+
 ## Quickstart
 
 * Clone git repository: `repo url`
