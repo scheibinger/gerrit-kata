@@ -32,13 +32,31 @@ ssh -p 29418 admin@54.194.88.176 gerrit create-project --name gerrit-kata
 
 ## Working with changes and patchsets
 
+### Ammending commits
 ```bash
 $ git commit --amend
 $ git push origin HEAD:refs/for/master
+```
+
+### Squashing commits
+`git rebase -i HEAD~3`
+
+```
+pick f392171 Added new feature X
+pick ba9dd9a Added new elements to page design
+pick df71a27 Updated CSS for new elements
+```
+
+```
+pick f392171 Added new feature X
+squash ba9dd9a Added new elements to page design
+squash df71a27 Updated CSS for new elements
 ```
 
 ## Reviewing and submitting changes
 
 ## Resolving conflicts
 
-## Gerrit magic
+## Additional resource:
+* setting up gerrit with jenkins: http://dachary.org/?p=1716
+* https://code.google.com/p/gerrit/
