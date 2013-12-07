@@ -87,6 +87,19 @@ squash df71a27 Updated CSS for new elements
 * automated tests
 * static analysis
 
+### Exercise 4. Commiting broken build
+1. Create new mocha failing test in test folder. It can be as simple as this:
+```
+var expect = require('chai').expect;
+
+describe("Add numbers" , function(){
+    it("dwa plus dwa powinno dac Siedemset", function(){
+        expect(2+2).to.equal(700);
+    });
+});
+```
+
+
 ## Gerrit tips
 ### Creating project from cmd line:
 `ssh -p 29418 admin@54.194.88.176 gerrit create-project --name gerrit-kata`
