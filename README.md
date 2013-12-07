@@ -66,10 +66,20 @@ squash ba9dd9a Added new elements to page design
 squash df71a27 Updated CSS for new elements
 ```
 
-5. Push the commit to/refs/for/master
+5. Push commit to/refs/for/master
 6. Ask for review
 
-## Resolving conflicts
+## Exercise 3. Resolving conflicts
+1. Edit `conflicts` file and add some random line
+2. commit and push to refs/for/master
+3. `git reset --soft HEAD~1` to move your head to the previous state
+4. Change the same line in `conflicts` and push it to `origin HEAD:refs/for/master`
+5. You should have two changes on gerrit affecting the same file
+6. Review one of them and submit
+7. Try to submit conflicting change. You should get an error.
+8. `git fetch` and `git rebase`
+9. Resolve conflict and `git rebase --continue`
+10. `git push origin HEAD:refs/for/master`
 
 ## Gerrit and Jenkins
 ### Jenkins URL
