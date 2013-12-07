@@ -61,6 +61,9 @@ squash df71a27 Updated CSS for new elements
 ### Configuration
 * Adding verified label: https://gerrit-review.googlesource.com/Documentation/config-labels.html
 
+`git pull ssh://rscheibinger@54.194.88.176:29418/All-Projects HEAD:refs/meta/config`
+`git push ssh://rscheibinger@54.194.88.176:29418/All-Projects HEAD:refs/meta/config`
+
 ## Additional resource:
 * setting up gerrit with jenkins: http://dachary.org/?p=1716
 * https://code.google.com/p/gerrit/
