@@ -23,14 +23,16 @@ http://source.android.com/source/life-of-a-patch.html
 * HTTP
   * set username and generate password
 
-####Creating project
+### Clone the gerrit-kata git project
+
 ssh -p 29418 admin@54.194.88.176 gerrit create-project --name gerrit-kata
 
 * Clone git repository: `git clone ssh://your_username@54.194.88.176:29418/gerrit-kata` or http://54.194.88.176:8081/#/admin/projects/gerrit-kata
 * Try to commit and push anything
 * Install git commit-id hook to your local repo to fix the error `scp -p -P 29418 review.example.com:hooks/commit-msg .git/hooks/`
 
-## Working with changes and patchsets
+### Working with changes and patchsets
+
 
 ### Ammending commits
 ```bash
@@ -41,11 +43,15 @@ $ git push origin HEAD:refs/for/master
 ### Squashing commits
 `git rebase -i HEAD~3`
 
+After entering the command you will se following commit message:
+
 ```
 pick f392171 Added new feature X
 pick ba9dd9a Added new elements to page design
 pick df71a27 Updated CSS for new elements
 ```
+
+In order to squash the last commits change `pick` into `squash` in front of the commit hash:
 
 ```
 pick f392171 Added new feature X
@@ -57,7 +63,14 @@ squash df71a27 Updated CSS for new elements
 
 ## Resolving conflicts
 
+## Gerrit and Jenkins
+### Code Verification
+* automated tests
+* static analysis
+
 ## Gerrit tips
+### Creating project from cmd line:
+`ssh -p 29418 admin@54.194.88.176 gerrit create-project --name gerrit-kata`
 ### Configuration
 * Adding verified label: https://gerrit-review.googlesource.com/Documentation/config-labels.html
 
