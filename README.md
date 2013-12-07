@@ -3,9 +3,6 @@ gerrit-kata
 
 Workshop about gerrit
 
-## Introduction
-http://gerrit-documentation.googlecode.com/svn/Documentation/2.3/intro-quick.html
-
 ## Workflow
 * http://source.android.com/source/life-of-a-patch.html
 * Diagram: http://source.android.com/images/workflow-0.png
