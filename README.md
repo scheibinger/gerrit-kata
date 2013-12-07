@@ -89,7 +89,8 @@ squash df71a27 Updated CSS for new elements
 
 ### Exercise 4. Commiting broken build
 1. Create new mocha failing test in test folder. It can be as simple as this:
-```
+
+```javascript
 var expect = require('chai').expect;
 
 describe("Add numbers" , function(){
@@ -98,7 +99,6 @@ describe("Add numbers" , function(){
     });
 });
 ```
-
 
 ## Gerrit tips
 ### Creating project from cmd line:
