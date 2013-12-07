@@ -69,7 +69,7 @@ squash df71a27 Updated CSS for new elements
 5. Push commit to/refs/for/master
 6. Ask for review
 
-## Exercise 3. Resolving conflicts
+### Exercise 3. Resolving conflicts
 1. Edit `conflicts` file and add some random line
 2. commit and push to refs/for/master
 3. `git reset --soft HEAD~1` to move your head to the previous state
@@ -80,6 +80,7 @@ squash df71a27 Updated CSS for new elements
 8. `git fetch` and `git rebase`
 9. Resolve conflict and `git rebase --continue`
 10. `git push origin HEAD:refs/for/master`
+11. Review the change on gerrit and submit. Now it should be merged succesfully.
 
 ## Gerrit and Jenkins
 ### Jenkins URL
