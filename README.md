@@ -34,7 +34,7 @@ ssh -p 29418 admin@54.194.88.176 gerrit create-project --name gerrit-kata
 ## Working with changes and patchsets
 In this exercise you will learn how to push your changes to gerrit and how the review functionality works.
 
-### Ammending commits
+### Exercise 1. Ammending commits
 1. Edit `attendees` file and put you name with an error.
 2. Commit and Push to refs/for/master
 3. Find your change on gerrit
@@ -43,7 +43,7 @@ In this exercise you will learn how to push your changes to gerrit and how the r
 6. Push commit to refs/for/master again: `$ git push origin HEAD:refs/for/master`
 7. Ask for review
 
-### Squashing commits
+### Exercise 2. Squashing commits
 1. Create a file with your name, add some bad content and push it to refs/for/master
 2. Ask for review. The result should be negative.
 3. Make a few commits to fix the bad content.
