@@ -35,7 +35,7 @@ In this exercise you will learn how to push your changes to gerrit and how the r
 1. Edit `attendees` file and put you name with an error.
 2. Commit and Push to refs/for/master
 3. Find your change on gerrit
-4. Ask person from your pair to review
+4. Ask person from your pair to review. During the review he/she should post some comments.
 5. Fix the error and --amend your commit: `$ git commit --amend`
 6. Push commit to refs/for/master again: `$ git push origin HEAD:refs/for/master`
 7. Ask for review
