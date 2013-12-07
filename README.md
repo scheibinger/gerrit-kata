@@ -88,7 +88,7 @@ squash df71a27 Updated CSS for new elements
 * static analysis
 
 ### Exercise 4. Commiting broken build
-1. Create new mocha failing test in test folder. It can be as simple as this:
+1. Create new mocha failing test in `test` folder. It can be as simple as this:
 
 ```javascript
 var expect = require('chai').expect;
@@ -99,6 +99,12 @@ describe("Add numbers" , function(){
     });
 });
 ```
+
+2. Commit and push test to `refs/for/master`
+3. When you go to gerrit, you should be able to see that the code was verified by Jenkins and rejected.
+4. Fix the test which doesn't make sense.
+5. `commit --amend` and push code again.
+6. Now you should see that the tests are passing in jenkins and change is verified.
 
 ## Gerrit tips
 ### Creating project from cmd line:
