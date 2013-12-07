@@ -7,12 +7,12 @@ Workshop about gerrit
 http://gerrit-documentation.googlecode.com/svn/Documentation/2.3/intro-quick.html
 
 ## Workflow
-http://source.android.com/source/life-of-a-patch.html
+* http://source.android.com/source/life-of-a-patch.html
+* Diagram: http://source.android.com/images/workflow-0.png
 
 ## Quickstart
 ###URLs
 * gerrit: http://54.194.88.176:8081/
-* jenkins: http://54.194.88.176:8080/
 
 ### Become the user
 * Click become the user
@@ -23,7 +23,7 @@ http://source.android.com/source/life-of-a-patch.html
 * HTTP
   * set username and generate password
 
-### Clone the gerrit-kata git project
+### Clone gerrit-kata git project
 
 ssh -p 29418 admin@54.194.88.176 gerrit create-project --name gerrit-kata
 
@@ -64,6 +64,9 @@ squash df71a27 Updated CSS for new elements
 ## Resolving conflicts
 
 ## Gerrit and Jenkins
+### Jenkins URL
+* jenkins: http://54.194.88.176:8080/
+
 ### Code Verification
 * automated tests
 * static analysis
