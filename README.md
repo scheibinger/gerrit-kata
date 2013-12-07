@@ -63,6 +63,7 @@ squash df71a27 Updated CSS for new elements
 
 `git pull ssh://rscheibinger@54.194.88.176:29418/All-Projects HEAD:refs/meta/config`
 `git push ssh://rscheibinger@54.194.88.176:29418/All-Projects HEAD:refs/meta/config`
+`ssh -p 29418 jenkins@54.194.88.176 gerrit review 2,8 --verified=-1 --code-review 0`
 
 ## Additional resource:
 * setting up gerrit with jenkins: http://dachary.org/?p=1716
